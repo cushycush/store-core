@@ -17,6 +17,7 @@ deprecation cycle if the consumers need it to.
 | [`platform`](./platform) | Detect OS, arch, Linux distro (+ version), hostname, shell, WSL. Exposes the `STORE_*` env-var contract. |
 | [`config`](./config) | `.store` directory layout, `FindRoot`, `ExpandHome`, and `WhenClause` (scalar-or-list YAML `when:` matching). |
 | [`hooks`](./hooks) | Runs `<root>/.store/hooks/<name>` global scripts; exposes the `Env` helper so tool-specific hook runners can reuse the env contract. |
+| [`ui`](./ui) | ANSI styling for CLI output — colors, bold/dim, doctor chips, prompts. Auto-disables on non-terminal stdout and honors `NO_COLOR` / `FORCE_COLOR`. |
 
 ## Example
 
